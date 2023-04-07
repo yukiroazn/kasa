@@ -1,0 +1,12 @@
+.main {
+padding-inline: 3rem;
+margin-bottom: 3rem;
+}
+
+@media screen and (width <= 768px) {
+
+.main {
+padding-inline: 2rem;
+}
+
+}

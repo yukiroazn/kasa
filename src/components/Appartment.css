@@ -1,0 +1,39 @@
+.appartment {
+border-radius: 1rem;
+flex-basis: 30%;
+background-size: cover;
+position: relative;
+}
+
+.appartementimg {
+width: 100%;
+height: 100%;
+border-radius: 1rem;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+object-fit: cover;
+filter: brightness(0.7);
+}
+
+.appartementsubtitle {
+position: absolute;
+bottom: 20px;
+left: 0;
+width: 50%;
+padding: 1rem;
+color: #fff;
+text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+font-size: 18px;
+font-style: bold;
+}
+
+@media screen and (width <= 1180px) {
+.appartment {
+flex-basis: 100%;
+height: 255px;
+}
+
+.appartementsubtitle {
+font-size: 18px;
+font-style: bold;
+}
+}

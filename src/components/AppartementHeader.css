@@ -1,0 +1,155 @@
+.appartementpage {
+color: #ff6060;
+}
+    
+.appartementpagetitle{
+padding: 1rem 3rem;
+margin-top: -60px;
+}
+        
+.titlename {
+font-size: 36px;
+padding-top: 0.5rem;
+}
+        
+.locationtext {
+font-size: 18px;
+margin-top: -2rem;  
+}
+        
+.appartementtags {
+display: flex;
+gap: 1rem;
+}
+        
+.appartementheader {
+display: flex;
+flex-grow: 1;
+}
+        
+.appartementtag {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #ff6060;
+color: white;
+height: 25px;
+width: 115px;
+border-radius: 10px;
+}
+          
+.appartementtagtext {
+font-size: 14px;
+text-align: center;
+}
+        
+.appartementowner {
+margin-left: auto;
+flex-direction: column;
+justify-content: space-between;
+}
+        
+h3 {
+font-weight: 400;
+display: flex;
+flex-direction: column;
+align-items: end;
+padding-inline: 1rem;
+margin-top: 10px;
+}
+        
+.apppartementownerbadge {
+width: 64px;
+height: 64px;
+border-radius: 50%;
+background-color: #C4C4C4;
+}
+    
+.appartementownerdetails {
+display: flex;
+gap: 0.5rem;
+padding-inline: 3rem;
+}
+        
+.appartementownerstars {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+font-size: 24px;
+}
+        
+.stargred {
+color: #ff6060;
+}
+        
+.stargray {
+color: #dbdbdb;
+}
+    
+@media screen and (width <=768px) {
+    
+.appartementpagetitle {
+padding: 1rem 1.5rem;
+}
+    
+.appartementtag {
+width: 84px;
+height: 18px;
+border-radius: 5px;
+}
+    
+.appartementtagtext {
+font-size: 10px;
+}
+    
+.titlename {
+font-size: 18px;
+font-weight: 800;
+}
+        
+.locationtext {
+font-size: 14px;
+padding-top: 1rem;
+}
+    
+}
+    
+@media screen and (width <=754px) {
+.appartementheader {
+flex-direction: column;
+}
+
+.appartementownerdetails {
+order: 1;
+padding-inline: 0;
+gap: 0;
+}
+
+.appartementowner {
+flex-direction: row;
+display: flex;
+}
+
+.appartementowner {
+margin-left: 0;
+padding-inline: 1.5rem;
+}
+
+h3 
+{
+font-size: 12px;
+}
+
+.apppartementownerbadge {
+width: 32px;
+height: 32px;
+margin-top: 6px;
+}
+
+.appartementownerstars {
+font-size: 13px;
+margin-top: 10px;
+}
+
+}

@@ -1,0 +1,41 @@
+.navbar{
+display: flex;
+padding: 2rem 3.5rem;
+align-items: center;
+color: #FF6060;
+font-weight: 700;
+gap: 2rem;
+}
+
+.navbar > *:first-child {
+margin-right: auto;
+}
+
+.navbar a {
+text-decoration: none;
+color: #FF6060;
+}
+
+.navbar a.active {
+text-decoration: underline;
+}
+
+.navbar a:hover {
+text-decoration: underline;
+}
+
+@media screen and (width <=768px) {
+.navbar {
+padding-inline: 2rem;
+text-transform: uppercase;
+}
+
+.logo {
+height: 47px;
+width: 145px;
+}
+
+.navbar a {
+font-size: 12px;
+}
+}

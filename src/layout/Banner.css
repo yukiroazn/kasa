@@ -1,0 +1,50 @@
+.banner {
+position: relative;
+background-position: center;
+background-size: cover;
+padding-inline: 2rem;
+background-image: url("/homepagebanner.jpg");
+height: 223px;
+margin: auto;
+border-radius: 25px;
+display: grid;
+place-items: center;
+color: white;
+margin-bottom: 2rem;
+max-width: 100%;
+}
+
+.banner::before {
+position: absolute;
+border-radius: 25px;
+content: "";
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+opacity: 0.3;
+background-color: black;
+}
+
+h1 {
+position: relative;
+}
+
+@media screen and (width <= 768px) {
+
+.banner {
+border-radius: 10px;
+height: 111px;
+}
+
+.banner::before {
+border-radius: 10px;
+height: 111px;
+}
+
+h1 {
+font-size: 24px;
+font-weight: 500;
+}
+
+}

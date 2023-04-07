@@ -1,0 +1,15 @@
+.appartementpage {
+color: #ff6060;
+min-height: 70vh;
+}
+
+.appartementdescriptionflex {
+display: flex;
+gap:1 rem;
+}
+
+@media screen and (width <=768px) {
+.appartementdescriptionflex {
+flex-direction: column;
+}
+}
