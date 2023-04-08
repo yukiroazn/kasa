@@ -1,5 +1,6 @@
 .appartementdescription{
 padding-inline: 3rem;
+flex-basis: 50%;
 }
     
 .descriptionheader {

@@ -1,17 +1,21 @@
 import React from 'react'
 import "./AppartementHeader.css"
 
-export function AppartementHeader() {
+export function AppartementHeader({ flat }) {
+
+const { name } = flat.host;
+const [ firstName, lastName ] = name.split(" ");
+
 return (
 <div className='appartementheader'>
 
 <div className='appartementpagetitle'>
-<p className='titlename'>Crazy loft on Canal Saint Martin</p>
-<p className='locationtext'>Paris, Ile de France</p>
+<p className='titlename'>{flat.title}</p>
+<p className='locationtext'>{flat.location}</p>
 <div className='appartementtags'>
-<div className='appartementtag appartementtagtext'>Cozy</div>
-<div className='appartementtag appartementtagtext'>Canak</div>
-<div className='appartementtag appartementtagtext'>Paris 10</div>
+{flat.tags.map((tag) => (
+<span className='appartementtag appartementtagtext' key={tag}>{tag}</span>
+))}
 </div>
 </div>
 
@@ -19,18 +23,18 @@ return (
 
 <div className='appartementownerdetails'>
 <h3>
-<span>Alexandre</span>
-<span>Dumas</span>
+<span>{firstName}</span>
+<span>{lastName}</span>
 </h3>
-<div className='apppartementownerbadge'></div>
+<div></div>
+<img className='apppartementownerbadge'src={flat.host.picture} alt="" />
 </div>
 
 <div className='appartementownerstars'>
-<i className="fa-sharp fa-solid fa-star starred"></i>
-<i className="fa-sharp fa-solid fa-star starred"></i>
-<i className="fa-sharp fa-solid fa-star starred"></i>
-<i className="fa-sharp fa-solid fa-star stargray"></i>
-<i className="fa-sharp fa-solid fa-star stargray"></i>
+{[1, 2, 3, 4, 5].map((num) => (
+<i key={num}className={`fas fa-star ${flat.rating >= num ? "starred" : ""}`}></i>
+))}
+
 </div>
 </div>
 

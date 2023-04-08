@@ -33,7 +33,7 @@ justify-content: center;
 align-items: center;
 background-color: #ff6060;
 color: white;
-height: 25px;
+height: 40px;
 width: 115px;
 border-radius: 10px;
 }
@@ -58,7 +58,7 @@ padding-inline: 1rem;
 margin-top: 10px;
 }
         
-.apppartementownerbadge {
+.apppartementownerbadge{
 width: 64px;
 height: 64px;
 border-radius: 50%;
@@ -75,16 +75,13 @@ padding-inline: 3rem;
 display: flex;
 justify-content: center;
 align-items: center;
-gap: 15px;
+gap: 10px;
 font-size: 24px;
-}
-        
-.stargred {
-color: #ff6060;
-}
-        
-.stargray {
 color: #dbdbdb;
+}
+        
+.starred {
+color: #ff6060;
 }
     
 @media screen and (width <=768px) {
@@ -95,7 +92,7 @@ padding: 1rem 1.5rem;
     
 .appartementtag {
 width: 84px;
-height: 18px;
+height: 30px;
 border-radius: 5px;
 }
     

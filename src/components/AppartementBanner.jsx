@@ -1,10 +1,10 @@
 import React from 'react'
 import "./AppartementBanner.css"
 
-export function AppartementBanner() {
+export function AppartementBanner(props) {
 return (
 <div className='appartementbannercontainer'>
-<img className="appartementbanner" src="https://picsum.photos/1240/415" alt="apartement" />
+<img className="appartementbanner" src={props.imageUrl} alt="apartement" />
 </div>
 )
 }
