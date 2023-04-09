@@ -9,36 +9,33 @@ import About from '../pages/About';
 import ErrorPage from '../pages/ErrrorPage';
 
 const router = createBrowserRouter([
-{
-path: '/',
+
+{ path: '/',
 element: <Homepage />,
 errorElement:(
 <>
 <Navbar />
 <ErrorPage/>
 </>
-),
-},
-{
-path: '/flat',
+),},
+
+{ path: '/flat',
 element: (
 <>
 <Navbar />
 <AppartementPage/>
 <Footer />
 </>
-),
-},
-{
-path: '/about',
+),},
+
+{ path: '/about',
 element: (
 <>
 <Navbar />
 <About/>
 <Footer />
 </>
-),
-},
+),},
 
 ]);
 

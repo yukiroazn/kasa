@@ -2,7 +2,7 @@
 padding-inline: 3rem;
 flex-basis: 50%;
 }
-    
+      
 .descriptionheader {
 background-color: #ff6060;
 padding: 0.2em 1em;
@@ -12,8 +12,10 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 height: 52px;
+cursor: pointer;
+user-select: none;
 }
-        
+          
 .descriptioncontent {
 background-color: #F6F6F6;
 border-radius: 0.7rem;
@@ -22,21 +24,23 @@ position: relative;
 top: -1.5rem;
 z-index: -1;
 padding-top: 30px;
+user-select: none;
+min-height: 249px;
+user-select: none;
 }
-    
-.arrowup {
-font-size: 1.5rem;
-cursor: pointer;
-}
-
+  
 @media screen and (width <=768px) {
 .appartementdescription {
 padding-inline: 1.2rem;
 }
-
+  
 .descriptionheader {
 height: 30px;
 border-radius: 5px;
 }
-
+  
+.descriptioncontent {
+min-height: 100px;
 }
+}
+  

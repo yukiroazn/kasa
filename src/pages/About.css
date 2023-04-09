@@ -1,5 +1,6 @@
 .aboutusmainbody {
 color: #ff6060;
+min-height: 90vh;
 }
 
 .aboutcontainer {
@@ -8,6 +9,7 @@ padding-inline: 3rem;
 
 .aboutdescriptioncontainer {
 padding-inline: 3rem;
+padding-bottom: 2px;
 }
 
 .aboutbannercontainer {
@@ -34,6 +36,8 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 height: 47px;
+cursor: pointer;
+user-select: none;
 }
         
 .aboutdescriptioncontent {
@@ -44,7 +48,7 @@ position: relative;
 top: -1.5rem;
 z-index: -1;
 padding-top: 30px;
-}
+} 
     
 .arrowup {
 font-size: 1.5rem;
@@ -70,5 +74,6 @@ padding-inline: 1.5rem;
 height: 30px;
 border-radius: 5px;
 }
+
 
 }

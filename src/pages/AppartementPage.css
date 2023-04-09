@@ -1,6 +1,7 @@
 .appartementpage {
 color: #ff6060;
-min-height: 70vh;
+min-height: 90vh;
+position: relative;
 }
 
 .appartementdescriptionflex {
@@ -12,4 +13,29 @@ gap:1 rem;
 .appartementdescriptionflex {
 flex-direction: column;
 }
+}
+
+.bannerarrows {
+position: absolute;
+top: 10%;
+left: 0;
+right: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 4rem;
+font-size: 4rem;
+cursor: pointer;
+color: white;
+}
+
+li.no-bullet {
+list-style: none;
+}
+
+.counter {
+position: absolute;
+top: 250%;
+left: 50%;
+font-size: 18px;
 }
