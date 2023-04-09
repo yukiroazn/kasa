@@ -19,7 +19,7 @@ errorElement:(
 </>
 ),},
 
-{ path: '/flat',
+{ path: '/flat/:id',
 element: (
 <>
 <Navbar />

@@ -9,7 +9,7 @@ useEffect(() => {
 fetchApartements();}, []);
 
 function fetchApartements() {
-fetch("db.json")
+fetch("/src/data/db.json")
 .then((res) => res.json())
 .then((res) => setAppartements(res))
 .catch((err) => console.log(err));
