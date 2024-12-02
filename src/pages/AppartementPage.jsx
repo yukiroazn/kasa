@@ -48,9 +48,13 @@ return (
 </div>
 
 <div className="bannerarrows">
+{flat.pictures.length > 1 && (
+<>
 <i className="fa-solid fa-chevron-left" onClick={() => arrows("previous")}></i>
 <span className="counter">{`${currentImageIndex + 1}/${flat.pictures.length}`}</span>
-<i className="fa-solid fa-chevron-right"onClick={() => arrows("next")}></i>
+<i className="fa-solid fa-chevron-right" onClick={() => arrows("next")}></i>
+</>
+)}
 </div>
 </div>
 );
