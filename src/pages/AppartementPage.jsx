@@ -43,7 +43,7 @@ return (
 <div className="appartementdescriptionflex">
 <AppartementDescription title="Description" content={flat.description} />
 
-<AppartementDescription title="Equiments" content={flat.equipments.map((eq) => (
+<AppartementDescription title="Équipements" content={flat.equipments.map((eq) => (
 <li key={eq} style={{ listStyle: "none" }}>{eq}</li>))}/>
 </div>
 
